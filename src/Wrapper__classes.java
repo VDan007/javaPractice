@@ -15,10 +15,24 @@ public class Wrapper__classes {
         // int          Integer    
         // double       Double
 
-        // autoboxing = automatic conversion between primitive and wrapper classes
+        // autoboxing 
+        // unboxing
 
 
+        Boolean a = true;
+        Character b = '@';
+        Integer c = 123;
+        Double d = 3.1456;
+        String e = "Bro";
 
+        
+
+        System.out.println(a.toString());
+        System.out.println(b);
+        System.out.println(c);
+        System.out.println(d);
+        System.out.println(e);
+        
 
     }
 
