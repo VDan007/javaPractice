@@ -6,7 +6,7 @@ public class DiceRoll {
     int number;
     
     DiceRoll(){
-        roll();
+        
     }
     void roll(){
         number = random.nextInt(6) + 1;
