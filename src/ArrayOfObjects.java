@@ -3,8 +3,10 @@
 public class ArrayOfObjects {
     public static void main(String[] args){
 
-     
+      
 
+     
+        objectsAsArguments();
        // Food[] refigerator = new Food[3];
 
         Food food1 = new Food("Pizza");
@@ -17,9 +19,9 @@ public class ArrayOfObjects {
         refigerator[1] = food2;
         refigerator[2] = food3;
 
-        System.out.println(refigerator[0].name);
-        System.out.println(refigerator[1].name);
-        System.out.println(refigerator[2].name);
+        // System.out.println(refigerator[0].name);
+        // System.out.println(refigerator[1].name);
+        // System.out.println(refigerator[2].name);
 
     }
 
@@ -28,7 +30,9 @@ public class ArrayOfObjects {
     public static void objectsAsArguments(){
         Garage garage = new Garage();
         Car car = new Car("BMW");
+        Car car2 = new Car("Tesla");
 
         garage.park(car);
+        garage.park(car2);
     }
 }
