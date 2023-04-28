@@ -45,5 +45,10 @@ public class ArrayListsInJava {
         System.out.println(nums.get(0));
         nums.add(10);
         System.out.println(nums.get(1));
+
+       
+
+       
+        
     }
 }
