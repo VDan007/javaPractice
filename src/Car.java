@@ -4,12 +4,15 @@ public class Car extends Vehicle {
     int year = 2023;
     String color = "red";
     double price = 500.00;
+    
 
     String name;
 
     Car(String name){
         this.name = name;
     }
+
+    
     
 
     void drive(){
