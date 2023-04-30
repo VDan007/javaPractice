@@ -1,4 +1,4 @@
-public class Vehicle {
+public abstract class Vehicle {
     
     double speed;
 
@@ -9,6 +9,8 @@ public class Vehicle {
             void stop(){
                 System.out.println("this vehicle is stopping");
             }
+
+            abstract void move();
 
 
 }

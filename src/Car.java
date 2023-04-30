@@ -24,4 +24,10 @@ public class Car extends Vehicle {
 
         return make + "\n" + model + "\n" + color + "\n" + year;
     }
+
+
+    @Override
+    void move() {
+        System.out.println("The driver is making this vehicle move");
+    }
 }
