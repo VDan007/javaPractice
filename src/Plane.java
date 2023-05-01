@@ -1,4 +1,4 @@
-public class Plane {
+public class Plane extends Vehicle {
     private String make;
     private String model;
     private int year;
@@ -36,6 +36,11 @@ public class Plane {
         this.setMake(x.getMake());
         this.setModel(x.getModel());
         this.setYear(x.getYear());
+    }
+
+    @Override
+    void move() {
+        System.out.println("The plane is moving");
     }
 
 }
