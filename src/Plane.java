@@ -28,4 +28,10 @@ public class Plane {
         this.make = make;
     }
 
+    public void copy(Plane x){
+        this.setMake(x.getMake());
+        this.setModel(x.getModel());
+        this.setYear(x.getYear());
+    }
+
 }
