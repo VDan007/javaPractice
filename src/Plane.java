@@ -9,6 +9,10 @@ public class Plane {
         setYear(year);
     }
 
+    Plane(Plane x){
+        this.copy(x);
+    }
+
     public String getMake(){
         return make;
     }
