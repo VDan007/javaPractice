@@ -31,6 +31,10 @@ public class Plane extends Vehicle {
     public void setMake(String make){
         this.make = make;
     }
+    @Override
+    public void go(){
+        System.out.println("The plane is going");
+    }
 
     public void copy(Plane x){
         this.setMake(x.getMake());

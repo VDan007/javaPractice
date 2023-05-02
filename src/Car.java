@@ -47,14 +47,18 @@ public class Car extends Vehicle {
         System.out.println("stoop");
     }
 
-    public String toString(){
-
-        return make + "\n" + model + "\n" + color + "\n" + year;
+    public void go(){
+        System.out.println("The car is going");
     }
+
+    // public String toString(){
+
+    //     return make + "\n" + model + "\n" + color + "\n" + year;
+    // }
 
 
     @Override
     void move() {
-        System.out.println("The driver is making this vehicle move");
+        System.out.println("The driver is making this car move");
     }
 }
