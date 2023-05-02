@@ -2,7 +2,7 @@ public class Animal {
     
 
 
-    void speak(){
+    void  speak(){
         System.out.println("this aniaml speaks");
     }
 }
