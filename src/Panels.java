@@ -1,4 +1,4 @@
-import java.awt.BorderLayout;
+//import java.awt.BorderLayout;
 import java.awt.Color;
 
 import javax.swing.JFrame;
@@ -10,8 +10,8 @@ public class Panels {
         // JPanel = a GUI component that functions as a container to hold other components
         JLabel label = new JLabel();
         label.setText("Hi");
-        label.setVerticalAlignment(JLabel.TOP);
-        label.setHorizontalAlignment(JLabel.CENTER);
+        // label.setVerticalAlignment(JLabel.TOP);
+        // label.setHorizontalAlignment(JLabel.CENTER);
         label.setBounds(100, 100, 75, 75);
 
         JPanel redPanel = new JPanel();
