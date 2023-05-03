@@ -45,7 +45,7 @@ public class JFrame__Practice02 {
         frame.setSize(500,500);
         frame.setVisible(true);
         frame.add(labell);
-        frame.pack();
+        frame.pack(); //sets size of frame to show all thigs inside
        // frame.setLayout(null);
         
         
