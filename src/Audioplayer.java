@@ -36,6 +36,8 @@ public class Audioplayer {
                 
             }
         }
+        System.out.println("Byeee!");
+        scanner.close();
 
       
     }
