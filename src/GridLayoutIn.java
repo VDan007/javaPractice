@@ -35,7 +35,7 @@ public class GridLayoutIn {
         frame.add(button7);
         frame.add(button8);
         frame.add(button9);
-        frame.add(new JButton("lol"));
+       // frame.add(new JButton("lol"));
 
 
         frame.setVisible(true);
