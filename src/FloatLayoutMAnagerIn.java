@@ -1,4 +1,6 @@
+import java.awt.BorderLayout;
 import java.awt.Color;
+import java.awt.Dimension;
 import java.awt.FlowLayout;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
@@ -16,9 +18,8 @@ public class FloatLayoutMAnagerIn  {
         // the FlowLayout class uses the next available row.
 
         JPanel panel = new JPanel();
-
+        panel.setPreferredSize(new Dimension(250,250) );
         panel.setBackground(Color.RED);
-       
         panel.setLayout(new FlowLayout());
 
        
@@ -37,6 +38,7 @@ public class FloatLayoutMAnagerIn  {
         panel.add(new JButton("7"));
         panel.add(new JButton("8"));
         panel.add(new JButton("9"));
+    
         frame.add(panel);
         frame.setVisible(true);
 
