@@ -54,8 +54,8 @@ public class MyFrame extends JFrame implements ActionListener  {
         this.setSize(500,500 ); //sets x and y dimensions of frame
         this.setLocationRelativeTo(null);
         this.setLayout(null);
-        this.add(button);
-        this.add(label);
+       // this.add(button);
+      //  this.add(label);
         this.setVisible(true); //make frame visible
        // this.getContentPane().setBackground(new Color(50,130,250)); //change color of background
     }
