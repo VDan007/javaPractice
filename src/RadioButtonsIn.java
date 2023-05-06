@@ -1,5 +1,10 @@
 public class RadioButtonsIn {
     public static void main(String[] args){
-        new MyFrame3('r');
+
+        //JComboBox = a component that combines a button or edotable field and a dwop  down list
+
+
+
+        new MyFrame3(1);
     }
 }

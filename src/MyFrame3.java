@@ -7,6 +7,7 @@ import java.awt.event.ActionListener;
 import javax.swing.ButtonGroup;
 import javax.swing.JButton;
 import javax.swing.JCheckBox;
+import javax.swing.JComboBox;
 import javax.swing.JFrame;
 import javax.swing.JRadioButton;
 
@@ -18,6 +19,7 @@ public class MyFrame3 extends JFrame implements ActionListener {
     JRadioButton pizzaBtn;
     JRadioButton hamburgerBtn;
     JRadioButton hotdogBtn;
+    JComboBox<String> comboBox;
 
     MyFrame3(){
 
@@ -68,14 +70,42 @@ public class MyFrame3 extends JFrame implements ActionListener {
         this.setVisible(true);
     }
 
+    MyFrame3(int n){
+        button = new JButton("submit");
+        button.setPreferredSize(new Dimension(100,40));
+        button.addActionListener(this);
+        
+        String[] animals = {"dog","cat","bird"};
+        comboBox = new JComboBox<String>(animals);
+        comboBox.addActionListener(this);
+        System.out.println( comboBox.getItemCount());
+        comboBox.addItem("horse");
+        comboBox.insertItemAt("pig", 0);
+        comboBox.setSelectedIndex(0);
+        comboBox.removeItem("cat");
+       
+
+
+
+        this.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
+        this.setLayout(new FlowLayout());
+        this.add(comboBox);
+    
+        this.pack();
+        this.setVisible(true);
+    }
+
     @Override
     public void actionPerformed(ActionEvent e) {
         if(e.getSource() == pizzaBtn){
             System.out.println(" You ordered pizza");
         }else if(e.getSource() == hamburgerBtn){
             System.out.println("You ordered hamburger");
-        }else {
+        }else if(e.getSource() == hotdogBtn){
             System.out.println("You ordered hotdog");
+        }else if(e.getSource() == comboBox){
+           // System.out.println(comboBox.getSelectedItem());
+           System.out.println(comboBox.getSelectedIndex());
         }
     }
 }
