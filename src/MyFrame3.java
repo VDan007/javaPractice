@@ -83,7 +83,8 @@ public class MyFrame3 extends JFrame implements ActionListener {
         comboBox.insertItemAt("pig", 0);
         comboBox.setSelectedIndex(0);
         comboBox.removeItem("cat");
-       
+        comboBox.removeItem(0);
+        //comboBox.removeAllItems();
 
 
 
