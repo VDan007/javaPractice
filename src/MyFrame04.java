@@ -3,6 +3,7 @@ import java.awt.FlowLayout;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
 import java.awt.event.KeyEvent;
+import java.io.File;
 
 import javax.swing.ImageIcon;
 import javax.swing.JButton;
@@ -78,11 +79,17 @@ public class MyFrame04 extends JFrame implements ActionListener {
            System.exit(0);
         }else if(e.getSource() == fileChooserBtn){
             JFileChooser fileChooser = new JFileChooser();
+            fileChooser.setCurrentDirectory(new File("."));
 
-            System.out.println(
 
-                fileChooser.showOpenDialog(null) // select file to open
-            );
+              // int response = fileChooser.showOpenDialog(null); // select file to open
+                 int response = fileChooser.showSaveDialog(null); // select file to save
+
+               if(response == JFileChooser.APPROVE_OPTION){
+                    File file = new File(fileChooser.getSelectedFile().getAbsolutePath());
+                    System.out.println(file);
+               }
+            
         }
     }
     
