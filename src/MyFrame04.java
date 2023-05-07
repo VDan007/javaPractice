@@ -1,15 +1,20 @@
+import java.awt.Dimension;
 import java.awt.FlowLayout;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
 import java.awt.event.KeyEvent;
 
 import javax.swing.ImageIcon;
+import javax.swing.JButton;
+import javax.swing.JFileChooser;
 import javax.swing.JFrame;
 import javax.swing.JMenu;
 import javax.swing.JMenuBar;
 import javax.swing.JMenuItem;
 
 public class MyFrame04 extends JFrame implements ActionListener {
+
+    // JFileChooser = A gui mechanism that let's a user coose a fiel
 
     JMenu helpMenu;
     JMenu editMenu;
@@ -18,10 +23,15 @@ public class MyFrame04 extends JFrame implements ActionListener {
     JMenuItem loadItem; 
     JMenuItem saveItem; 
     JMenuItem exitItem;
+    JButton fileChooserBtn;
 
     MyFrame04(){
 
         ImageIcon saveIcon = new ImageIcon("save.png");
+
+        fileChooserBtn = new JButton("select file");
+        fileChooserBtn.setPreferredSize(new Dimension(100, 30));
+        fileChooserBtn.addActionListener(this);
 
 
         menuBar = new JMenuBar();
@@ -51,6 +61,7 @@ public class MyFrame04 extends JFrame implements ActionListener {
         menuBar.add(editMenu);
         menuBar.add(helpMenu);
         this.setJMenuBar(menuBar);
+        this.add(fileChooserBtn);
         this.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
         this.setSize(500, 500);
         this.setLayout(new FlowLayout());
@@ -65,6 +76,13 @@ public class MyFrame04 extends JFrame implements ActionListener {
             System.out.println("save thing");
         }else if(e.getSource() == exitItem){
            System.exit(0);
+        }else if(e.getSource() == fileChooserBtn){
+            JFileChooser fileChooser = new JFileChooser();
+
+            System.out.println(
+
+                fileChooser.showOpenDialog(null) // select file to open
+            );
         }
     }
     
