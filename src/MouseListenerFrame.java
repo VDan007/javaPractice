@@ -41,25 +41,26 @@ public class MouseListenerFrame extends JFrame implements MouseListener {
 
     @Override
     public void mousePressed(MouseEvent e) {
-        // TODO Auto-generated method stub
+        System.out.println("mouse pressed");
+        label.setBackground(Color.BLACK);
         
     }
 
     @Override
     public void mouseReleased(MouseEvent e) {
-        // TODO Auto-generated method stub
+        System.out.println("released");
        
     }
 
     @Override
     public void mouseEntered(MouseEvent e) {
-        // TODO Auto-generated method stub
+        System.out.println("mouse entered");
         
     }
 
     @Override
     public void mouseExited(MouseEvent e) {
-        // TODO Auto-generated method stub
+       System.out.println("mouse exited");
         
     }
 
